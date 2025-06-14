@@ -54,7 +54,7 @@ const Login = () => {
         if (res1.data.success) {
           toast.success(res1.data.message);
           getAuthUser();
-          navigate("/selImg");
+          navigate("/");
         }
       }
       catch (error) {
