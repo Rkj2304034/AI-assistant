@@ -112,8 +112,8 @@ export const logIn = async (req, res) => {
         return res.cookie("token", token, {
             httpOnly: true,
             maxAge: 7 * 24 * 60 * 60 * 1000,
-            sameSite: "Lax",       // ✅ Lax allows sending across ports on localhost
-            secure: false          // ✅ Keep false for HTTP
+            sameSite: "None",       // ✅ Lax allows sending across ports on localhost
+            secure: true          // ✅ Keep false for HTTP
         }).status(200).json({ success: true, message: "Logined successfully" });
     }
     catch (error) {
