@@ -1,5 +1,5 @@
 import User from "../models/user.js"
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import { sendOtp } from "../services/sendOtp.js";
 import Verification from "../models/verification.js"
 import { genToken } from "../services/auth.js";
