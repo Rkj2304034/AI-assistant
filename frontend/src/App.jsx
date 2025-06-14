@@ -7,7 +7,7 @@ import VerifyCode from './components/VerifyCode'
 
 import Coustomize1 from './components/Coustomize1'
 import { useContext } from 'react'
-import { userDataContext } from './context/userProvider'
+import { userDataContext } from './context/UserProvider'
 import Coustomize2 from './components/coustomize2'
 
 

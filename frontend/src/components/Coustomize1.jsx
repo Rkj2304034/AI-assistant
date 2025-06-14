@@ -10,7 +10,7 @@ import img6 from '../assets/images/img6.jpeg'
 import img7 from '../assets/images/img7.jpeg'
 import { RiImageAddLine } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import { userDataContext } from '../context/userProvider';
+import { userDataContext } from '../context/UserProvider';
 
 
 const Coustomize1 = () => {

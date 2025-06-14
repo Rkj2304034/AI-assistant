@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState, useRef } from 'react'
-import { userDataContext } from '../context/userProvider'
+import { userDataContext } from '../context/UserProvider'
 import { IoMenu } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';

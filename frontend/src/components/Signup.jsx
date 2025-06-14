@@ -4,7 +4,7 @@ import { useNavigate,Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
-import { userDataContext } from '../context/userProvider';
+import { userDataContext } from '../context/UserProvider';
 
 const Signup = () => {
   const {serverUrl,getAuthUser} = useContext(userDataContext);

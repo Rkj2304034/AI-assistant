@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { userDataContext } from '../context/userProvider';
+import { userDataContext } from '../context/UserProvider';
 
 
 const Card = ({img}) => {

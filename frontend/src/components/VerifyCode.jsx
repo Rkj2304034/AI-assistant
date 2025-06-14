@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import toast from "react-hot-toast"
 import axios from 'axios';
-import { userDataContext } from '../context/userProvider';
+import { userDataContext } from '../context/UserProvider';
 
 const VerifyCode = () => {
     const {serverUrl,getAuthUser} = useContext(userDataContext);
