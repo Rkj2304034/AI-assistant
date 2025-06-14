@@ -4,7 +4,7 @@ import React, { createContext, useEffect, useState } from 'react'
 export const userDataContext = createContext();
 
 const UserProvider = ({ children }) => {
-    const serverUrl = "http://localhost:8000";
+    const serverUrl = "https://ai-assistant-irae.onrender.com";
     const [userData, setUserData] = useState(null);
     const [frontendImg, setFrontendImg] = useState(null);
       const [backendImg, setBackendImg] = useState(null);
