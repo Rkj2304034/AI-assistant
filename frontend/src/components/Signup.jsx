@@ -7,7 +7,7 @@ import { IoEyeOff } from "react-icons/io5";
 import { userDataContext } from '../context/UserProvider';
 
 const Signup = () => {
-  const {serverUrl,getAuthUser} = useContext(userDataContext);
+  const {serverUrl} = useContext(userDataContext);
   const navigate = useNavigate();
   const [showPassword,setShowPassword] = useState(false);
   const [loading,setLoading] = useState(false);
