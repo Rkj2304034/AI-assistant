@@ -6,6 +6,7 @@ import { genToken } from "../services/auth.js";
 import uploadOnCloudinary from "../config/cloudinary.js";
 import { gemResponse } from "../gemini.js";
 import moment from "moment"
+import ai from "../services/gemini.js";
 
 export const sendCode = async (req, res) => {
     try {
@@ -163,7 +164,10 @@ export const askToGemini = async(req,res) => {
         const id = req.id;
         const user = await User.findById(id);
         
-        const result = await gemResponse(command,user?.name,user?.assistantName);
+        const result = await ai.models.generateContent({
+    model: "gemini-3.5-flash",
+    contents: command,
+  });
 
 
         const jsonMatch = result.match(/{[\s\S]*}/);
